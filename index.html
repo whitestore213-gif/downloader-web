@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>All Downloader — HD Video & Foto</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">⬇</span>
+      <div>
+        <h1>All Downloader</h1>
+        <p>Download video & foto HD dari berbagai platform</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="platforms">
+    <span>TikTok</span>
+    <span>Instagram</span>
+    <span>YouTube</span>
+    <span>Twitter/X</span>
+    <span>Facebook</span>
+    <span>Pinterest</span>
+  </div>
+
+  <div class="input-box">
+    <input type="text" id="urlInput" placeholder="Paste link video atau foto di sini..." />
+    <button id="downloadBtn">Download</button>
+  </div>
+
+  <div class="quality-picker">
+    <label>Pilih Kualitas:</label>
+    <div class="quality-options">
+      <button class="quality-btn" data-q="360">360p</button>
+      <button class="quality-btn" data-q="480">480p</button>
+      <button class="quality-btn active" data-q="720">720p HD</button>
+      <button class="quality-btn" data-q="1080">1080p FHD</button>
+      <button class="quality-btn" data-q="1440">1440p 2K</button>
+      <button class="quality-btn" data-q="2160">2160p 4K</button>
+      <button class="quality-btn" data-q="audio">Audio</button>
+    </div>
+  </div>
+
+  <div class="result" id="result">
+    <div class="placeholder">
+      <div class="ph-icon">◇</div>
+      <p>Hasil download bakal muncul di sini</p>
+    </div>
+  </div>
+
+  <div class="console" id="console">
+    <div class="console-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">system.log</span>
+      <button class="clear" id="clearLog">CLEAR</button>
+    </div>
+    <div class="console-body" id="consoleBody">
+      <div class="log info">[SYSTEM] All Downloader initialized...</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>All Downloader © 2026</p>
+    <p class="sub">Support TikTok • Instagram • YouTube • Twitter • Facebook • Pinterest</p>
+  </footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
