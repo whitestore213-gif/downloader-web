@@ -89,4 +89,4 @@ function detectPlatform(url) {
   if (url.includes('pinterest')) return 'Pinterest';
   if (url.includes('reddit')) return 'Reddit';
   return 'Unknown';
-}
+        }
